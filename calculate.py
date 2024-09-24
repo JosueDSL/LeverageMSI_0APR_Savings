@@ -12,8 +12,8 @@ class MSISavingsCalculator:
 
     def get_user_input(self):
         """Collect and validate user input."""
-        self.total_amount = self.prompt_for_positive_float("Enter the total amount to finance (in pesos): ")
-        self.annual_interest_rate = self.prompt_for_positive_float("Enter the annual interest rate (e.g., 14 for 14%): ") / 100
+        self.total_amount = self.prompt_for_positive_float("Enter the total amount of money $ to finance: ")
+        self.annual_interest_rate = self.prompt_for_positive_float("Enter the annual interest rate (e.g., 10 for 10%): ") / 100
         self.months = self.prompt_for_positive_int("Enter the number of months to finance (e.g., 12): ")
         self.monthly_payment = self.total_amount / self.months
         self.output_choice = self.prompt_for_output_choice()
